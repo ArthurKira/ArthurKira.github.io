@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Setiembre 2022 - Diciembre 2022",
+    title: "Practicas PreProfesionales",
+    company: "Oficina de Información y Comunicación - UNCP",
+    description:
+      "Realicé mis prácticas pre profesionales en la Oficina de Tecnologías de la Información de la UNCP de septiembre a diciembre de 2022. Durante este período, brindé apoyo en el soporte y mantenimiento de los bienes informáticos, adquiriendo experiencia práctica en la gestión y resolución de problemas de sistemas informáticos en un entorno universitario.",
+
+  },
+  // {
+  //   date: "Septiembre 2022",
+  //   title: "Principal Frontend Engineer",
+  //   company: "Adevinta Spain",
+  //   description:
+  //     "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+  // },
+  //  {
+  //   date: "Septiembre 2022",
+  //   title: "Principal Frontend Engineer",
+  //   company: "Adevinta Spain",
+  //   description:
+  //     "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+  // },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

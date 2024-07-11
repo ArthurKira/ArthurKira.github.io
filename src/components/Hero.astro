@@ -1,0 +1,45 @@
+---
+const personalImageAlt = "Arturo Marin"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="https://media.licdn.com/dms/image/D4E03AQGWzcWP-hPyAg/profile-displayphoto-shrink_200_200/0/1699067792738?e=1726099200&v=beta&t=7VO0g3ZhWEJBCLtDMODgye_uXq3Jj1zSeqxhBT4lyIo"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://linkedin.com/in/josé-marín-ramos-4b014a29a"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hey, soy Arturo
+  </h1>
+  <p
+  class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-green-300 [&>strong]:text-green-500 [&>strong]:font-semibold dark:text-gray-300"
+>
+  Recién egresado en <strong>Ingeniería de Sistemas</strong>, apasionado por el <strong>desarrollo de aplicaciones</strong> y la <strong>ciencia de datos</strong>. Actualmente residenciado en Huancayo, Perú 🇵🇪, me especializo en crear soluciones tecnológicas innovadoras.
+</p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:josemarinramos100@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://linkedin.com/in/josé-marín-ramos-4b014a29a">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>

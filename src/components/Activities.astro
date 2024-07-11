@@ -1,0 +1,54 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  
+  {
+    date: "Machla, Ecuador 2023",
+    title: "TARECDA",
+    company: "Taller Regional de Aplicaciones de Investigación en Ciencia de Datos",
+    description:
+      "El Taller Regional de Aplicaciones de Investigación en Ciencia de Datos (TaRecDa) se celebró en Machala, Ecuador, en 2023. Este evento, auspiciado por Rice University y Google Research, ofreció talleres prácticos y conferencias sobre ciencia de datos. En esta edición, participé en el desarrollo de una aplicación móvil para detectar enfermedades en cacao utilizando inteligencia artificial, y colaboré con investigadores internacionales en la aplicación de técnicas avanzadas para resolver problemas regionales.",
+    link: "https://www.tarecda.org/",
+  },
+  {
+    date: "Piura, Perú 2022",
+    title: "TARECDA",
+    company: "Taller Regional de Aplicaciones de Investigación en Ciencia de Datos",
+    description:
+      "El Taller Regional de Aplicaciones de Investigación en Ciencia de Datos (TaRecDa) tuvo lugar en Piura, Perú, en 2022. Este evento, auspiciado por Rice University y Google Research, ofreció talleres y conferencias sobre la aplicación práctica de la ciencia de datos. En esta edición, participé en sesiones formativas que abordaron técnicas y herramientas avanzadas en ciencia de datos, y tuve la oportunidad de conocer diferentes perspectivas de expertos y colegas en proyectos orientados a resolver necesidades e impulsar innovaciones.",
+    link: "https://sites.google.com/view/tarecda-2022/",
+  },
+  {
+    date: "Setiembre 2021 - Setiembre 2022",
+    title: "Proyección Social",
+    company: "I.E. Almirante Miguel Grau - Chupuro",
+    description:
+      "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
+    
+  },
+  // {
+  //   date: "Septiembre 2022",
+  //   title: "Principal Frontend Engineer",
+  //   company: "Adevinta Spain",
+  //   description:
+  //     "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+  // },
+  //  {
+  //   date: "Septiembre 2022",
+  //   title: "Principal Frontend Engineer",
+  //   company: "Adevinta Spain",
+  //   description:
+  //     "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+  // },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

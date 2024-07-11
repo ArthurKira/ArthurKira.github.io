@@ -1,0 +1,12 @@
+<div class="flex items-center">
+  <span class="relative inline-flex overflow-hidden rounded-full p-[1px]">
+    <span
+      class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00FF00_0%,#003300_50%,#00FF00_100%)]"
+    ></span>
+    <div class="inline-flex items-center justify-center w-full px-3 py-1 text-sm text-[#00FF00] bg-black rounded-full cursor-pointer backdrop-blur-3xl whitespace-nowrap"
+         style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-shadow: 0 0 1px #000; will-change: transform; backface-visibility: hidden; transform: translateZ(0);">
+      <slot />
+    </div>
+  </span>
+</div>
+
